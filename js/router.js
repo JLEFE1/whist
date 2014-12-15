@@ -15,7 +15,7 @@ define(function (require) {
 
         routes: {
             "": "home",
-            "products/:id": "productDetails"
+            "players/:id": "playerDetails"
         },
 
         home: function () {
@@ -23,12 +23,12 @@ define(function (require) {
             slider.slidePage(homeView.$el);
         },
 
-        productDetails: function (id) {
-            require(["app/models/product", "app/views/ProductView"], function (models, ProductView) {
-                var product = new models.Product({id: id});
-                product.fetch({
+        playerDetails: function (id) {
+            require(["app/models/player", "app/views/PlayerView"], function (models, PlayerView) {
+                var player = new models.Player({id: id});
+                player.fetch({
                     success: function (data) {
-                        slider.slidePage(new ProductView({model: data}).$el);
+                        slider.slidePage(new PlayerView({model: data}).$el);
                     }
                 });
             });

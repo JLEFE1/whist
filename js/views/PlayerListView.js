@@ -5,7 +5,7 @@ define(function (require) {
     var $           = require('jquery'),
         Handlebars  = require('handlebars'),
         Backbone    = require('backbone'),
-        tplText     = require('text!tpl/ProductList.html'),
+        tplText     = require('text!tpl/PlayerList.html'),
         template = Handlebars.compile(tplText);
 
 

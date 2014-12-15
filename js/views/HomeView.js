@@ -5,8 +5,8 @@ define(function (require) {
     var $               = require('jquery'),
         Handlebars      = require('handlebars'),
         Backbone        = require('backbone'),
-        ProductListView = require('app/views/ProductListView'),
-        models          = require('app/models/product'),
+        PlayerListView  = require('app/views/PlayerListView'),
+        models          = require('app/models/player'),
         tplText         = require('text!tpl/Home.html'),
         template = Handlebars.compile(tplText);
 
@@ -14,13 +14,13 @@ define(function (require) {
     return Backbone.View.extend({
 
         initialize: function () {
-            this.productList = new models.ProductCollection();
+            this.playerList = new models.PlayerCollection();
             this.render();
         },
 
         render: function () {
             this.$el.html(template());
-            this.listView = new ProductListView({collection: this.productList, el: $(".scroller", this.el)});
+            this.listView = new PlayerListView({collection: this.playerList, el: $(".scroller", this.el)});
             return this;
         },
 
@@ -31,7 +31,7 @@ define(function (require) {
 
         search: function (event) {
             var key = $('.search-key').val();
-            this.productList.fetch({reset: true, data: {name: key}});
+            this.playerList.fetch({reset: true, data: {name: key}});
         },
 
         onkeypress: function (event) {

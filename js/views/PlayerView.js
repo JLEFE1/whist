@@ -5,7 +5,7 @@ define(function (require) {
     var $           = require('jquery'),
         Handlebars  = require('handlebars'),
         Backbone    = require('backbone'),
-        tplText     = require('text!tpl/Product.html'),
+        tplText     = require('text!tpl/Player.html'),
         template = Handlebars.compile(tplText);
 
     return Backbone.View.extend({

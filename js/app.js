@@ -9,7 +9,7 @@ require.config({
 
     map: {
         '*': {
-            'app/models/product': 'app/models/memory/product'
+            'app/models/player': 'app/models/memory/player'
         }
     },
     shim: {

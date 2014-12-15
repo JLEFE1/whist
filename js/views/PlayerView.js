@@ -6,7 +6,7 @@ define(function (require) {
         Handlebars  = require('handlebars'),
         Backbone    = require('backbone'),
         tplText     = require('text!tpl/Player.html'),
-        template = Handlebars.compile(tplText);
+        template 	= Handlebars.compile(tplText);
 
     return Backbone.View.extend({
 

@@ -51,28 +51,34 @@ var populateDB = function () {
     console.log("Populating player database...");
     players = [
         {   "id": 1,
-                "name": "Joris Lefever",
-                
+            "name": "Joris Lefever",
+            "smallPic": "Joris_small.jpg",
+            "largePic": "Joris.jpg" 
         },
         {   "id": 2,
             "name": "An Scheers",
-
+		 	"smallPic": "An_small.jpg",
+			"largePic": "An.jpg"
         },
         {   "id": 3,
-            "name": "Sander DeBacker",
-
+            "name": "Sander De Backer",
+		 	"smallPic": "Sander_small.jpg",
+            "largePic": "tuareg.jpg"
         },
         {   "id": 4,
             "name": "Ben Beulens",
-
+		 	"smallPic": "Ben_small.jpg",
+            "largePic": "Ben.jpg"
         },
         {   "id": 5,
-            "name": "Geert Visseneacken",
-
+            "name": "Geert Vissenaeken",
+		 	"smallPic": "Geert_small.jpg",
+			"largePic": "Geert.jpg"
         },
         {   "id": 6,
-            "name": "Steven Coopmans",
-
+            "name": "Steven Coomans",
+		 	"smallPic": "Steven_small.jpg",
+            "largePic": "Steven.jpg"
         }   
     ];
 
